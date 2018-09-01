@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Chart</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="demo.css" rel="stylesheet" media="all"> 
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+        <style>
+            body{
+                background: transparent;
+                font-family: 'Open Sans', sans-serif, Helvetica, Arial, sans-serif;
+            }
+            .content{
+                margin: 0 auto;
+                text-align: center;
+                max-width: 546px;
+            }  
+
+            .circle-one:before {
+                content: ' \25CF';
+                color: #2196f3;
+            }
+
+            .circle-two:before {
+                content: ' \25CF';
+                color: #5ab963;
+            }
+
+            .circle-three:before {
+                content: ' \25CF';
+                color: #ff5722;
+            }
+
+            .circle-four:before {
+                content: ' \25CF';
+                color: #673ab7;
+            }
+
+            .circle-five:before {
+                content: ' \25CF';
+                color: #ffeb3b;
+            }
+
+            .circle-six:before {
+                content: ' \25CF';
+                color: #9ea2e2;
+            }
+
+            .chart-item{
+                color: #B7B7B7;
+                display: block;
+                text-align: left;
+            }
+            .chart-item {
+                color: #B7B7B7;
+                font-size:16px;
+                list-style-type: none;
+                line-height: 20px;
+            }
+            .dslegend{
+                position: absolute;
+                margin-left: 342px;
+                margin-top: 69px;
+                text-align: left;
+            }
+
+            .circle-point{
+                padding-right: 10px;
+                font-size: 32px;
+            }
+            span{
+                font-weight: normal;
+            }
+
+            @media only screen and (max-width :  768px) {
+                .dslegend{
+                    position: relative;
+                    margin-left: 0;
+                    margin-top: 0;
+                    text-align: center;
+                    margin: 0 auto;
+                }
+            }            
+        </style>
+    </head>
+    <body>
+        <div class="content">
+
+
+            <div id="title">
+
+                <h3 style="    color: #B7B7B7;    font-size: 30px;  line-height: 30px;">Annual Fresh Water Consumption of Konabari of Gazipur Cluster</h3>
+                <ul class="dslegend">
+                    <li class="chart-item"><span class="circle-point  circle-one"></span>Textile dry process</li>
+                    <li class="chart-item"><span class="circle-point  circle-two"></span>Textile wet process</li>
+                    <li class="chart-item"><span class="circle-point  circle-three"></span>Households</li> 
+                    <li class="chart-item"><span class="circle-point  circle-four"></span>Agriculture</li>
+                    <li class="chart-item"><span class="circle-point  circle-five"></span>Other domestic</li>
+                    <li class="chart-item"><span class="circle-point  circle-six"></span>Other industries</li>
+                </ul>
+
+            </div>
+            <div style=" text-align: center; width: 300px; height: 300px; position: relative; border-radius: 300px; background-color: transparent;">
+
+                <div id="slice-one" style="display: none; position: absolute; top: 0px; left: 0px; width: 300px; height: 300px; border-radius: 300px; clip: rect(0px 300px 300px 150px);">
+                    <div style="background-color: #ff5722; position: absolute; top: 0px; left: 0px; width: 300px; height: 300px; border-radius: 300px; clip: rect(0px 150px 300px 0px); transform: rotate(10.8deg);">
+
+                    </div>
+
+                    <span style="position: absolute;  z-index: 999999999;  transform: rotate(-73.8deg); width: 100px;    height: 50px; top: 5%;left: 42%;font-size: 100%; color: white;">3%</span>
+                </div>
+
+                <div id="slice-two" style="display: none; position: absolute; top: 0px; left: 0px; width: 300px; height: 300px; border-radius: 300px; clip: rect(0px 300px 300px 150px); transform: rotate(10.8deg);">
+                    <div style="background-color: #673ab7; position: absolute; top: 0px; left: 0px; width: 300px; height: 300px; border-radius: 300px; clip: rect(0px 150px 300px 0px); transform: rotate(10.8deg);">
+
+                    </div>
+                    <span style="position: absolute;  z-index: 999999999;  transform: rotate(-73.8deg); width: 100px;    height: 50px; top: 5%;left: 41%;font-size: 100%; color: white;">3%</span>
+                </div>
+
+                <div id="slice-three" style="display: none; position: absolute; top: 0px; left: 0px; width: 300px; height: 300px; border-radius: 300px; clip: rect(0px 300px 300px 150px); transform: rotate(21.6deg);">
+                    <div style="background-color: #ffeb3b; position: absolute; top: 0px; left: 0px; width: 300px; height: 300px; border-radius: 300px; clip: rect(0px 150px 300px 0px); transform: rotate(3.6deg);">
+
+                    </div>
+
+                </div>
+
+                <div id="slice-four" style="display: none; position: absolute; top: 0px; left: 0px; width: 300px; height: 300px; border-radius: 300px; clip: rect(0px 300px 300px 150px); transform: rotate(25.2deg);">
+                    <div style="background-color: #2196f3; position: absolute; top: 0px; left: 0px; width: 300px; height: 300px; border-radius: 300px; clip: rect(0px 150px 300px 0px); transform: rotate(115.2deg);">
+
+                    </div>
+                    <span style="position: absolute; z-index: 999999999; transform: rotate(-24.8deg);  width: 100px;height: 50px;top: 32%; left: 59%;font-size: 200%; color: white;">32%</span>
+                </div>
+
+                <div id="slice-five" style="display: none;">
+
+                    <div style="position: absolute; top: 0px; left: 0px; width: 300px; height: 300px; border-radius: 300px; clip: rect(0px 300px 300px 100px); transform: rotate(140.4deg);">
+                        <div style="background-color: #5ab963; position: absolute; top: 0px; left: 0px; width: 300px; height: 300px; border-radius: 300px; clip: rect(0px 150px 300px 0px); transform: rotate(180deg);">
+
+                        </div>
+                    </div>
+
+                    <div style="position: absolute; top: 0px; left: 0px; width: 300px; height: 300px; border-radius: 300px; clip: rect(0px 300px 300px 150px); transform: rotate(319.4deg);">
+                        <div style="background-color: #5ab963; position: absolute; top: 0px; left: 0px; width: 300px; height: 300px; border-radius: 300px; clip: rect(0px 150px 300px 0px); transform: rotate(40.6deg);">
+
+                        </div>
+                    </div>
+                    <span style="    position: absolute; left: 19%;top: 46%;z-index: 999999999;font-size: 200%; color: white;">61%</span>
+                </div>
+            </div>
+            <p style="color: #B7B7B7">Source: Water Footprint Assessment Report, PaCT</p>
+        </div>
+
+        <script>
+
+            setTimeout(function () {
+                jQuery("#slice-one").fadeIn('slow');
+            }, 2500);
+
+            setTimeout(function () {
+                jQuery("#slice-two").fadeIn('slow');
+            }, 3500);
+
+            setTimeout(function () {
+                jQuery("#slice-three").fadeIn('slow');
+            }, 4500);
+
+            setTimeout(function () {
+                jQuery("#slice-four").fadeIn('slow');
+            }, 5500);
+
+            setTimeout(function () {
+                jQuery("#slice-five").fadeIn('slow');
+            }, 6500);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,353 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #222;
+    font: 16px/1.5 Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+pre,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+p,
+pre,
+ul {
+    margin-bottom: 2em;
+}
+
+pre {
+    background: #fefefe;
+    border: 1px solid #dedede;
+    overflow-x: auto;
+    padding: 2em;
+}
+
+ul {
+    margin-left: 1em;
+}
+#nav {
+    list-style: none;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    background: rgb(0, 14, 13);
+    height: 100%; 
+    padding-top: 30px;
+    width: 10%;
+    max-width: 80px;
+}
+#nav li {
+    margin-bottom: 2px;
+}
+#nav a {
+    /* background: #ededed; */
+    color: #666;
+    display: block;
+    font-size: 12px;
+    padding: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+}
+/* #nav a:hover {
+    background: #dedede;
+} */
+
+#nav .current a, #nav .dropdown a:hover{
+    background: #ff7f00;
+    color: #ededed;
+}
+
+#container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.btn-design{
+    font-size: 22px;
+    padding: 4px;
+    font-weight: bold;
+    color: white;
+    margin-left:10px;
+}
+.dropbtn:before{
+    /*content:url('image/bullet.png');*/
+    position:relative;  
+    top:10px;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 50px;
+    top: 0;
+    padding: 10px;
+    font-size: 12px;
+    top: -40px;
+}
+
+.dropdown-content a {
+    color: blue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.mainnav{ 
+    right: 0;
+    top: 20px;
+    position: fixed;
+}
+div.vertical-line{
+    width: 1px;
+    background-color: white;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.btn  {
+    display: block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+a.homeicon{
+    background-image: url(image/home-icon-md.png);
+    background-size: 100%;
+    height: 32px;
+    background-repeat: no-repeat;
+    width: 32px;
+    font-size: 0;
+    /*  position: fixed; */
+    /*  right: 25px;    */
+    z-index: 1000000;
+}
+#nav-home{
+    font-size: 0px !important;
+    margin-bottom: 20px !important;
+}
+.pintotop{
+    background-image: url(image/scroll_icon.png) !important; 
+    margin-top: 20px !important;
+    font-size: 0px !important;
+
+}
+.section {
+    /* border-bottom: 3px solid #ccc;*/
+    min-height: 60vh; 
+    padding: 0px 0px;
+    background: linear-gradient(to bottom right, #000 7%, transparent);
+    background: rgba(0, 0, 0, 0.63);
+    background: -webkit-linear-gradient(left, #000 7% , transparent);
+    background: -o-linear-gradient(right, #000 7%, transparent);
+    background: -moz-linear-gradient(right, #000 7%, transparent);
+    background: linear-gradient(to right, #000 7%, transparent);
+
+}
+
+.section p:last-child {
+    margin-bottom: 0;
+}
+
+/*.home{
+    background: url('http://coolgeography.co.uk/A-level/AQA/Year%2012/Rivers_Floods/Flooding/Bangladesh/bangladesh_floods_3column00_nospace_landscape.jpg');
+    background-size: cover;
+}*/
+/*.chapter1{
+    background: url('http://e3.365dm.com/17/05/1096x616/68d0a886ee73e8725ed2faecf946e195625513d5f2c60629824b1e18331cccc3_3964692.jpg?20170528080309');
+    background-size: cover;
+}*/
+/*.chapter2{
+    background: url('http://response.brac.net/wp-content/uploads/2017/04/flash-flood.jpg');
+    background-size: cover;
+}*/
+.chapter3{
+    background: url('http://response.brac.net/wp-content/uploads/2017/04/flash-flood.jpg');
+    background-size: cover;
+}
+.chapter4{
+    background: url('http://www.thedailystar.net/sites/default/files/styles/very_big_1/public/feature/images/flood_in_sirajganj.jpg?itok=sL35jVcl');
+    background-size: cover;
+}
+.chapter5{
+    background: url('https://floodobservatory.colorado.edu/Events/2017Bangladesh4459/20170408Bangladesh4459.jpg');
+    background-size: cover;
+}
+.chapter6{
+    background: url('http://d30fl32nd2baj9.cloudfront.net/media/2017/07/07/51_moulvibazar_flood_070717_0004.jpg/ALTERNATES/w640/51_Moulvibazar_flood_070717_0004.jpg');
+    background-size: cover;
+}
+.chapter7{
+    background: url('http://www.capitalfm.co.ke/news/files/2017/08/29e980507b0f35b226f5976357ecca9393348b90.jpg');
+    background-size: cover;
+}
+.text-container{
+    width: 40%;
+    max-width: 500px;
+    /*  background: rgba(0, 0, 0, 0.70); */
+    padding: 15px 10px;
+}
+.sub-text{
+    /*  max-width: 40%; */
+    /* background: rgba(0, 0, 0, 0.70); */
+    padding: 15px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.heading, .text-container{
+    text-align: center; 
+
+    /* background: rgba(58, 87, 116, 0.66); */
+}
+.heading{
+    color: #ca6c09; 
+}
+
+* { box-sizing: border-box; }
+.video-background {
+    /*   background: #000;*/
+    position: fixed;
+    top: 0; 
+    right: 0;
+    bottom: 0; 
+    left: 0;
+    z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+    position: absolute;
+    /*    top: 0;
+        left: 0;*/
+    width: 100%;
+    height: 100%;
+    /*   pointer-events: none; */
+}
+#vidtop-content {
+    top: 0;
+    color: #fff;
+}
+/* .vid-info { 
+    top: 0; right: 0; width: 33%; background: rgba(0, 0, 0, 0.62); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+*/
+@media (min-aspect-ratio: 16/9) {
+    .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+    .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+    .vid-info { width: 50%; padding: .5rem; }
+    .vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+    .vid-info .acronym { display: none; }
+}
+
+.blank-space{
+    height: 300px;
+    clear: both;
+}
+.smalltext{
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width :  768px) {
+
+    .text-container{
+        width: 93%;
+        max-width: 93%;  
+        background: rgba(0, 0, 0, 0.7); 
+        padding:10px  30px 10px 20px;
+
+    } 
+    .smalltext{
+        display: none;
+    }
+    .heading {  
+        line-height: 1;
+        margin-bottom: .5em;
+        font-size: 26px;  
+
+    }
+    #home{
+        background: url('http://coolgeography.co.uk/A-level/AQA/Year%2012/Rivers_Floods/Flooding/Bangladesh/bangladesh_floods_3column00_nospace_landscape.jpg');
+        background-size: cover;
+    }
+    #chapter1{
+        background: url('http://e3.365dm.com/17/05/1096x616/68d0a886ee73e8725ed2faecf946e195625513d5f2c60629824b1e18331cccc3_3964692.jpg?20170528080309');
+        background-size: cover;
+    }
+    #chapter2{
+        background: url('http://response.brac.net/wp-content/uploads/2017/04/flash-flood.jpg');
+        background-size: cover;
+    }
+}
+

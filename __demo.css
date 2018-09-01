@@ -1,0 +1,604 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #222;
+    font-family: 'Open Sans', sans-serif, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+p,
+pre,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 1em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+p,
+pre,
+ul {
+    margin-bottom: 2em;
+}
+
+pre {
+    background: #fefefe;
+    border: 1px solid #dedede;
+    overflow-x: auto;
+    padding: 2em;
+}
+
+ul {
+    margin-left: 1em;
+}
+#nav {
+    list-style: none;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    background: rgb(0, 14, 13);
+    height: 100%; 
+    padding-top: 30px;
+    width: 10%;
+    max-width: 77px;
+}
+#nav li {
+    margin-bottom: 2px;
+}
+#nav a {
+    /* background: #ededed; */
+    color: #666;
+    display: block;
+    font-size: 12px;
+    padding: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+}
+/* #nav a:hover {
+    background: #dedede;
+} */
+
+#nav .current a, #nav .dropdown a:hover{
+    background: #ff7f00;
+    color: #ededed;
+}
+
+#container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.btn-design{
+    font-size: 22px;
+    padding: 4px;
+    font-weight: bold;
+    color: white;
+    margin-left:10px;
+}
+.dropbtn:before{
+    /*content:url('image/bullet.png');*/
+    position:relative;  
+    top:10px;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 50px;
+    top: 0;
+    padding: 10px;
+    font-size: 12px;
+    top: -40px;
+}
+
+.dropdown-content a {
+    color: blue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.mainnav{ 
+    right: 0;
+    top: 20px;
+    position: fixed;
+}
+div.vertical-line{
+    width: 1px;
+    background-color: white;
+    /*height: 100%;*/
+    text-align: center;
+    margin: 0 auto;
+    height: 20px;
+}
+
+.btn  {
+    display: block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+a.homeicon{
+    background-image: url(image/home-icon-md.png);
+    background-size: 100%;
+    height: 32px;
+    background-repeat: no-repeat;
+    width: 32px;
+    font-size: 0;
+    /*  position: fixed; */
+    /*  right: 25px;    */
+    z-index: 1000000;
+}
+#nav-home{
+    font-size: 0px !important;
+    margin-bottom: 20px !important;
+}
+.pintotop{
+    background-image: url(image/scroll_icon.png) !important; 
+    margin-top: 20px !important;
+    font-size: 0px !important;
+
+}
+.section {
+    /* border-bottom: 3px solid #ccc;*/
+    min-height: 60vh; 
+    padding: 0px 0px;
+    /* background: linear-gradient(to bottom right, #000 2%, transparent);
+    background: rgba(0, 0, 0, 0.63);
+    background: -webkit-linear-gradient(left, #000 2% , transparent);
+    background: -o-linear-gradient(right, #000 2%, transparent);
+    background: -moz-linear-gradient(right, #000 2%, transparent);
+    background: linear-gradient(to right, #000 2%, transparent); */
+
+}
+
+.section p:last-child {
+    margin-bottom: 0;
+}
+
+/*.home{
+    background: url('http://coolgeography.co.uk/A-level/AQA/Year%2012/Rivers_Floods/Flooding/Bangladesh/bangladesh_floods_3column00_nospace_landscape.jpg');
+    background-size: cover;
+}*/
+/*.chapter1{
+    background: url('http://e3.365dm.com/17/05/1096x616/68d0a886ee73e8725ed2faecf946e195625513d5f2c60629824b1e18331cccc3_3964692.jpg?20170528080309');
+    background-size: cover;
+}*/
+/*.chapter2{
+    background: url('http://response.brac.net/wp-content/uploads/2017/04/flash-flood.jpg');
+    background-size: cover;
+}*/
+/*
+.chapter4{
+    background: url('image/water_garments.jpg');
+    background-size: cover;
+}
+.chapter5{
+    background: url('image/water_garments.jpg');
+    background-size: cover;
+} */
+/*.chapter6{
+    background: url('image/water_garments.jpg');
+    background-size: cover;
+}
+.chapter7{
+    background: url('image/water_more _pollution.jpg');
+    background-size: cover;
+}*/
+
+
+#chapter3{
+    background: url('image/gradient.jpg');
+    background-size: cover;
+
+}
+#chapter5{
+    background: url('image/gradient.jpg');
+    background-size: cover;
+}
+#chapter6{
+    background: url('image/gradient.jpg');
+    background-size: cover;
+}
+.gradient-overlay{
+
+    width:100%;
+    max-width: 80%;
+    background: linear-gradient(to bottom right, #000 20%, transparent);
+    background: rgba(0, 0, 0, 0.50);
+    background: -webkit-linear-gradient(left, #000 20% , transparent);
+    background: -o-linear-gradient(right, #000 20%, transparent);
+    background: -moz-linear-gradient(right, #000 20%, transparent);
+    background: linear-gradient(to right, #000 20%, transparent);
+    height: 100%;
+}
+.gradient-overlay-small{
+
+    width:40%;
+    max-width: 80%;
+    background: linear-gradient(to bottom right, #000 20%, transparent);
+    background: rgba(0, 0, 0, 0.50);
+    background: -webkit-linear-gradient(left, #000 20% , transparent);
+    background: -o-linear-gradient(right, #000 20%, transparent);
+    background: -moz-linear-gradient(right, #000 20%, transparent);
+    background: linear-gradient(to right, #000 20%, transparent);
+    height: 100%;
+}
+
+.text-container{
+    width: 100%;
+    max-width:650px;
+    /*  background: rgba(0, 0, 0, 0.70); */
+    padding-right:20px;
+    padding-top:50px;
+    padding-bottom:50px;
+    padding-left: 50px;
+}
+.sub-text{
+    max-width: 85%; 
+    /* background: rgba(0, 0, 0, 0.70); */
+    /* padding: 15px;
+     color: #fff;
+     font-size: 15px;*/
+    padding: 2px;
+    color: #fff;
+    font-size: 21px;
+    line-height: 26px;
+
+
+}
+
+.heading-to{
+    display: none;
+}
+
+.garments_mobile{
+    display: none;
+}
+
+
+.heading, .text-container{
+    text-align: center; 
+
+    /* background: rgba(58, 87, 116, 0.66); */
+}
+.heading{
+    color: #ca6c09; 
+    margin-left: -50px;
+}
+
+* { box-sizing: border-box; }
+.video-background {
+    /*   background: #000;*/
+    position: fixed;
+    top: 0; 
+    right: 0;
+    bottom: 0; 
+    left: 0;
+    z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+    position: absolute;
+    /*    top: 0;
+        left: 0;*/
+    width: 100%;
+    height: 100%;
+    /*   pointer-events: none; */
+}
+#vidtop-content {
+    top: 0;
+    color: #fff;
+} 
+@media (min-aspect-ratio: 16/9) {
+    .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+    .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+    .vid-info { width: 50%; padding: .5rem; }
+    .vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+    .vid-info .acronym { display: none; }
+}
+
+.blank-space{
+    height: 300px;
+    clear: both;
+}
+.blank-space-big{
+    height: 600px;
+    clear: both;
+}
+.smalltext{
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+#pollution-iframe-mb{
+    display: none;
+}
+
+
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width :  768px) {
+
+    .gradient-overlay{
+        width: 93%;
+        max-width: 93%; 
+    }
+    .text-container{
+        width: 100%;
+        max-width: 100%;  
+        background: rgba(0, 0, 0, 0.7); 
+        padding:10px  30px 10px 20px;
+        margin-left: 0px;
+
+    } 
+    .smalltext{
+        display: none;
+    }
+    .heading {  
+        line-height: 1;
+        margin-bottom: .5em;
+        font-size: 26px; 
+        padding: 20px; 
+
+    }
+    .garments_mobile h3 {  
+        font-size: 16px; 
+
+    }
+    #home{
+        background: url('image/water_garments_home.jpg');
+        background-size: cover;
+    }
+    #chapter1{
+        background: url('image/water_garments_1.jpg');
+        background-size: cover;
+    }
+    #chapter2{
+        background: url('image/water_garments_3.jpg');
+        background-size: cover;
+    }
+
+    #chapter4{
+        background: url('image/water_more _pollution.jpg');
+        background-size: cover;
+    }
+    #chapter7{
+        background: url('image/water_more _pollution.jpg');
+        background-size: cover;
+    }
+
+    .blank-space-big{
+        display: none;
+    } 
+
+    .buttons {
+        display: none;
+    }
+
+    .blank-space{
+        display: none;
+    }
+    #heading_two{
+        font-size: 18px;
+    }
+    #heading-list{
+        /*font-size: 0px;*/ 
+        line-height: 17px;
+    }
+    #iframe1{
+        padding: 3px;
+        bottom: 10px;
+    }
+    .sub-text{
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    #heading_one {
+        display: none;
+    }
+    .heading-to{
+        display: block;
+    }
+    .garments_desktop{
+        display: none;
+    }
+    .garments_mobile{
+        display: block;
+    }
+    #pollution-iframe{
+        display: none;
+    }
+    #pollution-iframe-mb{
+        display: block;
+        width: 100%;
+        height: 250px;
+    }
+    #iframe2{
+        display: none;
+    }
+
+    #viz1505283466034 {
+        display: block !important;
+        width: 100% !important;  /* RESPONSIVE WIDTH */
+        max-width: 100% !important;
+        height: 700px !important;
+        overflow: auto !important;  /* EDIT TO hidden FOR NO SCROLLBAR */
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+    
+    #iframe21,#iframe22,#iframe23{
+        display: none;
+    }
+
+}
+
+
+@media only screen and (min-width :  1024px) {
+    #iframe1{
+        display: none;
+    } 
+}
+.buttons {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+
+}
+
+.icon{
+    width: 60px;
+    height: 60px; 
+    position: relative;
+    float: left; 
+    border-radius: 200px;
+    cursor: pointer;
+}
+.playicon{
+
+    position: absolute; 
+    border-left: 32px solid #fff; 
+    border-top: 18px solid transparent;
+    border-bottom: 11px dashed transparent;
+    right: -44px;
+    bottom: 63px;
+} 
+
+.pauseicon{
+    position:absolute;
+    margin-top:13px;
+    margin-left:12px;
+    border-left:13px solid red;
+    border-right:13px solid red;
+    width: 10px;
+    height: 26px;
+}
+
+#charted-5289991{
+    border: 0 !important;
+    overflow: hidden;
+}
+
+#imageid3,#imageid4,#imageid5,#imageid6,#imageid7,#imageid8{
+    display: none;
+    float:left;
+    min-height: 100px;
+}
+
+#heading_three,#heading_four,#heading_five,#heading_six,#heading_seven,#heading_eight{
+    display: none; padding: 45px; color:white;
+}
+#heading_nine,#heading_ten{
+    padding: 25px; color:white;
+}
+
+#imageid9,#imageid10{
+    float:left; 
+    padding: 10px;
+    min-height: 100px;
+}
+
+#iframe21{
+    position: absolute; 
+    width: 45%;
+    height: 55%;
+    right:120px;
+    margin-top: -140px;
+}
+#iframe22{
+    position:absolute;
+    width:40%;
+    height:50%;
+    right:180px;
+    margin-top: -150px;
+}
+#iframe23{
+    position:absolute;
+    width:47%;
+    height:50%;
+    right:110px;
+    margin-top: -78px;
+}
+
+/*#iframe1{
+    position:relative;
+    height:0;
+    padding-bottom:56.25%;
+}
+
+iframe{
+     position:absolute;
+     width:100%;height:100%;left:0;
+}*/
+
+#nav-content-img{
+    width: 150px;
+}
+
