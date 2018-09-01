@@ -5,12 +5,12 @@ This projcts used several Infographics, data visualization tools, including Java
 
 
 Live proejct link:
-===============
+---------
 https://www.thedailystar.net/bangladesh-readymade-gament-rmg-top-export-dhaka-groundwater-water-pollution-invisible-price
  
  
 Project Short Description:
-==============================
+--------------------
 Bangladesh boasts as the world’s number two garment exporter. Every third European has a t-shirt made in Bangladesh on his back. Every fifth American wears jeans manufactured in Bangladesh.
 But this is not a story of how many million pieces we export. This is a story of the invisible price we pay every time a jeans rolls out of a factory in Bangladesh. The western buyers little know how much water, that precious resource, was used to wash and dye his trousers.
 
