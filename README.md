@@ -32,11 +32,11 @@ Inam Ahmed
 Refayet Ullah Mirdha
 
 Content Development:
-==============
+---------
 Zaid Kalam
 
 Videography:
-==============
+---------
 
 Zahed Khan
 
@@ -53,13 +53,13 @@ Arif, Web Programmer, The Daily Star https://www.linkedin.com/in/arif-hossain/
 
 
 Infographics:
-=============
+---------
 
 Zaid Kalam
 
 
 Creative:
-=======
+---------
 Iftakhar Shihir
 
 Sharif Ahmed
@@ -67,7 +67,7 @@ Sharif Ahmed
 Anwar Sohel
 
 Research:
-========
+---------
 
 Zaid Kalam
 
