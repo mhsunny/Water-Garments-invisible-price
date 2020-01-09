@@ -46,7 +46,7 @@ Zahed Khan
 
 Ananta Yusuf
 
-Technology & Develoers:
+Technology & Developers:
 =================== 
 
 MH Sunny, Lead Programmer & Analyst, The Daily Star Linkedin: https://www.linkedin.com/in/mhsunny7/ 
